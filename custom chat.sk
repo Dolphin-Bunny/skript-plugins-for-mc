@@ -1,4 +1,3 @@
-# you can change the colors and message formatting/content
 on join:
   send "<orange>Welcome to the server!<reset>" to player
   set join message to "<cyan>%player%&5 joined"
@@ -13,7 +12,7 @@ on chat:
   cancel event
   broadcast "<cyan>%player%<reset>: %message%"
 
-command /bc <text>:
+command /broadcast <string>:
   aliases: broadcast
   trigger:
-    broadcast "<light green>[<red>BROADCAST<light green>]<reset>: %arg 1%"
+    broadcast "<light green>[<red>BROADCAST<light green>]<reset>:  %arg 1%"
