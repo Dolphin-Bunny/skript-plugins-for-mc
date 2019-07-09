@@ -12,3 +12,8 @@ on death:
 on chat:
   cancel event
   broadcast "<cyan>%player%<reset>: %message%"
+
+command /bc <text>:
+  aliases: broadcast
+  trigger:
+    broadcast "<light green>[<red>BROADCAST<light green>]<reset>: %arg 1%"
