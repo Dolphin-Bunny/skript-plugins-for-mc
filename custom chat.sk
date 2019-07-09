@@ -1,0 +1,14 @@
+# you can change the colors and message formatting/content
+on join:
+  send "<orange>Welcome to the server!<reset>" to player
+  set join message to "<cyan>%player%&5 joined"
+
+on quit:
+  set quit message to "<cyan>%player%<purple> left"
+
+on death:
+  set the death message to "<cyan>%player%<purple> died"
+
+on chat:
+  cancel event
+  broadcast "<cyan>%player%<reset>: %message%"
